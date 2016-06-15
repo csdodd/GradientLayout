@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GradientLayout">
+        <attr name="start_color" format="reference" />
+        <attr name="end_color" format="reference" />
+    </declare-styleable>
+</resources>

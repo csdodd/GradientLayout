@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GradientLayout">
+        <attr name="start_color" format="reference" />
+        <attr name="end_color" format="reference" />
+        <attr name="orientation" format="enum">
+            <enum name="TOP_BOTTOM" value="0"/>
+            <enum name="TR_BL" value="1"/>
+            <enum name="RIGHT_LEFT" value="2"/>
+            <enum name="BR_TL" value="3"/>
+            <enum name="BOTTOM_TOP" value="4"/>
+            <enum name="BL_TR" value="5"/>
+            <enum name="LEFT_RIGHT" value="6"/>
+            <enum name="TL_BR" value="7"/>
+        </attr>
+    </declare-styleable>
+</resources>

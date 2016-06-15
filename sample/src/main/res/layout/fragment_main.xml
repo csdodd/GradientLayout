@@ -1,0 +1,11 @@
+<net.colindodd.gradientlayout.GradientRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    gl:start_color="@android:color/holo_purple"
+    gl:end_color="#AAFF0000"
+    gl:orientation="TOP_BOTTOM">
+
+</net.colindodd.gradientlayout.GradientRelativeLayout>
