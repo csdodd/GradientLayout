@@ -2,7 +2,6 @@ package net.colindodd.gradientlayout;
 
 import android.annotation.TargetApi;
 import android.content.Context;
-import android.content.res.TypedArray;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.util.AttributeSet;
@@ -36,6 +35,12 @@ public class GradientGridLayout extends GridLayout {
         this.gradientBackground = new GradientBackground(context, attrs);
     }
 
+    /**
+     * <p>Configure the gradient background for this layout.</p>
+     * @param startColor The start color for the gradient
+     * @param endColor The end color for the gradient
+     * @param orientation The orientation for the gradient {@link  android.graphics.drawable.GradientDrawable.Orientation  GradientDrawable.Orientation}
+     */
     public void setGradientBackgroundConfig(final int startColor, final int endColor, final GradientDrawable.Orientation orientation) {
         this.gradientBackground
                 .setStartColor(startColor)
