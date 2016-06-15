@@ -19,8 +19,8 @@ Usage
     xmlns:gl="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    gl:start_color="@android:color/holo_purple"
-    gl:end_color="#AAFF0000"
+    gl:start_color="@color/purple"
+    gl:end_color="@color/blue"
     gl:orientation="TOP_BOTTOM">
 
 </net.colindodd.gradientlayout.GradientRelativeLayout>
