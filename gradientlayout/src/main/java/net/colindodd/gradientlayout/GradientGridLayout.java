@@ -22,7 +22,7 @@ public class GradientGridLayout extends GridLayout {
         this.gradientBackground = new GradientBackground(context, attrs);
     }
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     public GradientGridLayout( final Context context,
                                  final AttributeSet attrs,
                                  final int defStyleAttr) {
