@@ -1,5 +1,8 @@
 GradientLayout
 ===============
+[![Android
+Arsenal](https://img.shields.io/badge/Android%20Arsenal-GradientLayout-green.svg?style=true)](https://android-arsenal.com/details/1/3732)
+
 A library which extends Android layouts to allow for the easy configuring of gradient backgrounds.
 
 <img src="https://raw.githubusercontent.com/csdodd/GradientLayout/master/demo.gif" width="350">
