@@ -11,7 +11,7 @@ Gradle
 ------
 ```groovy
 dependencies {
-    compile 'net.colindodd:gradientlayout:1.0'
+    compile 'net.colindodd:gradientlayout:1.1'
 }
 ```
 
@@ -32,7 +32,16 @@ Usage
 
 ```java
     final GradientLinearLayout layout = (GradientLinearLayout) view.findViewById(R.id.root);
-    layout.setGradientBackgroundConfig(Color.parseColor("#7B1FA2"), Color.parseColor("#009688"), GradientDrawable.Orientation.BL_TR);
+    layout.setStartColor(Color.rgb(255,87,34))
+          .setEndColor(Color.rgb(255,193,7))
+          .setOrientation(GradientDrawable.Orientation.TR_BL);
+
+```
+
+Or just provide a single color and the layout will generate a gradient for you:
+```java
+    final GradientLinearLayout layout = (GradientLinearLayout) view.findViewById(R.id.root);
+    layout.setEndColor(Color.rgb(123,31,162));
 
 ```
 
