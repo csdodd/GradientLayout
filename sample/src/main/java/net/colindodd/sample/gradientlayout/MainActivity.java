@@ -85,19 +85,21 @@ public class MainActivity extends AppCompatActivity {
         private void generateBackgroundForSection(final GradientRelativeLayout layout, final int section) {
             switch (section) {
                 case 1:
-                    layout.setGradientBackgroundConfig(Color.parseColor("#7B1FA2"), Color.parseColor("#009688"), GradientDrawable.Orientation.BL_TR);
+                    layout.setGradientBackgroundConfig(Color.rgb(123, 31, 162), Color.rgb(0, 150, 136), GradientDrawable.Orientation.BL_TR);
                     break;
                 case 2:
-                    layout.setGradientBackgroundConfig(-1, Color.parseColor("#7B1FA2"), GradientDrawable.Orientation.TOP_BOTTOM);
+                    layout.setEndColor(Color.rgb(123,31,162));
                     break;
                 case 3:
-                    layout.setGradientBackgroundConfig(Color.parseColor("#689F38"), -1, GradientDrawable.Orientation.LEFT_RIGHT);
+                    layout
+                            .setEndColor(Color.rgb(104,159,56))
+                            .setOrientation(GradientDrawable.Orientation.LEFT_RIGHT);
                     break;
                 case 4:
-                    layout.setGradientBackgroundConfig(Color.parseColor("#E91E63"), Color.parseColor("#FFCDD2"), GradientDrawable.Orientation.RIGHT_LEFT);
-                    break;
-                case 5:
-                    layout.setGradientBackgroundConfig(Color.parseColor("#FF5722"), Color.parseColor("#FFC107"), GradientDrawable.Orientation.TR_BL);
+                    layout
+                            .setStartColor(Color.rgb(255,87,34))
+                            .setEndColor(Color.rgb(255,193,7))
+                            .setOrientation(GradientDrawable.Orientation.TR_BL);
                     break;
             }
         }
@@ -120,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 5;
+            return 4;
         }
     }
 }
