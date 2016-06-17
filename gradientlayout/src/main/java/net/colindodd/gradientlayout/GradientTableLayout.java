@@ -30,6 +30,33 @@ public class GradientTableLayout extends TableLayout {
                 .generate();
     }
 
+    /**
+     * <p>Configure the start color for the gradient background for this layout.</p>
+     * @param startColor The start color for the gradient
+     */
+    public GradientTableLayout setStartColor(final int startColor) {
+        this.gradientBackground.setStartColor(startColor).generate();
+        return this;
+    }
+
+    /**
+     * <p>Configure the end color for the gradient background for this layout.</p>
+     * @param endColor The end color for the gradient
+     */
+    public GradientTableLayout setEndColor(final int endColor) {
+        this.gradientBackground.setEndColor(endColor).generate();
+        return this;
+    }
+
+    /**
+     * <p>Configure the orientation for the gradient background for this layout.</p>
+     * @param orientation The orientation for the gradient {@link  android.graphics.drawable.GradientDrawable.Orientation  GradientDrawable.Orientation}
+     */
+    public GradientTableLayout setOrientation(final GradientDrawable.Orientation orientation) {
+        this.gradientBackground.setOrientation(orientation).generate();
+        return this;
+    }
+
     @Override
     protected void onLayout(final boolean changed,
                             final int left,
