@@ -1,14 +1,14 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
         minSdkVersion 8
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion 26
+        versionCode 3
+        versionName "1.2"
     }
 
     buildTypes {
@@ -23,7 +23,7 @@ apply plugin: 'maven'
 
 def groupId = 'net.colindodd'
 def artifactId = 'gradientlayout'
-def version = '1.0'
+def version = '1.2'
 
 configurations {
     optional
@@ -59,11 +59,11 @@ uploadArchives {
                 if (project.configurations.optional.allDependencies.findAll { dep ->
                     xmlDep.groupId.text() == dep.group && xmlDep.artifactId.text() == dep.name
                 }) {
-                    def xmlOptional = xmlDep.optional[0];
+                    def xmlOptional = xmlDep.optional[0]
                     if (!xmlOptional) {
                         xmlOptional = xmlDep.appendNode('optional')
                     }
-                    xmlOptional.value = 'true';
+                    xmlOptional.value = 'true'
                 }
             }
         }

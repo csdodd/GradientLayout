@@ -11,7 +11,7 @@ Gradle
 ------
 ```groovy
 dependencies {
-    compile 'net.colindodd:gradientlayout:1.1'
+    compile 'net.colindodd:gradientlayout:1.2'
 }
 ```
 
