@@ -6,13 +6,13 @@ import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.util.AttributeSet;
 
-final class GradientBackground {
+public class GradientBackground {
 
     private int startColor;
     private int endColor;
     private GradientDrawable.Orientation orientation;
 
-    GradientBackground(final Context context, final AttributeSet attrs) {
+    public GradientBackground(final Context context, final AttributeSet attrs) {
         final TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.GradientLayout, 0, 0);
         this.startColor = a.getColor(R.styleable.GradientLayout_start_color, -1);
         this.endColor = a.getColor(R.styleable.GradientLayout_end_color, -1);
@@ -22,22 +22,22 @@ final class GradientBackground {
         a.recycle();
     }
 
-    final GradientBackground setStartColor(final int startColor) {
+    public GradientBackground setStartColor(final int startColor) {
         this.startColor = startColor;
         return this;
     }
 
-    final GradientBackground setEndColor(final int endColor) {
+    public GradientBackground setEndColor(final int endColor) {
         this.endColor = endColor;
         return this;
     }
 
-    final GradientBackground setOrientation(final GradientDrawable.Orientation orientation) {
+    public GradientBackground setOrientation(final GradientDrawable.Orientation orientation) {
         this.orientation = orientation;
         return this;
     }
 
-    final GradientDrawable generate() {
+    public GradientDrawable generate() {
         populateMissingColors();
         final int colors[] = {this.startColor, this.endColor};
         final GradientDrawable.Orientation validOrientation = this.orientation == null
