@@ -66,6 +66,38 @@ public class GradientLinearLayout extends LinearLayout {
         return this;
     }
 
+    public GradientLinearLayout setRadiusCornerTopLeft(final float radius) {
+        this.gradientBackground.setRadiusCornerTopLeft(radius);
+        return this;
+    }
+
+    /**
+     * <p>Configure the top right corner radius</p>
+     * @param radius The radius to set
+     */
+    public GradientLinearLayout setRadiusCornerTopRight(final float radius) {
+        this.gradientBackground.setRadiusCornerTopRight(radius);
+        return this;
+    }
+
+    /**
+     * <p>Configure the top left corner radius</p>
+     * @param radius The radius to set
+     */
+    public GradientLinearLayout setRadiusCornerBottomRight(final float radius) {
+        this.gradientBackground.setRadiusCornerBottomRight(radius);
+        return this;
+    }
+
+    /**
+     * <p>Configure the top left corner radius</p>
+     * @param radius The radius to set
+     */
+    public GradientLinearLayout setRadiusCornerBottomLeft(final float radius) {
+        this.gradientBackground.setRadiusCornerBottomLeft(radius);
+        return this;
+    }
+
     /**
      * <p>Configure the orientation for the gradient background for this layout.</p>
      * @param orientation The orientation for the gradient {@link  android.graphics.drawable.GradientDrawable.Orientation  GradientDrawable.Orientation}

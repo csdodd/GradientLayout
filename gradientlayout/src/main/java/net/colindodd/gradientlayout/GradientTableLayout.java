@@ -11,7 +11,7 @@ public class GradientTableLayout extends TableLayout {
     private final GradientBackground gradientBackground;
 
     public GradientTableLayout(final Context context,
-                                final AttributeSet attrs) {
+                               final AttributeSet attrs) {
         super(context, attrs);
         this.gradientBackground = new GradientBackground(context, attrs);
     }
@@ -47,6 +47,39 @@ public class GradientTableLayout extends TableLayout {
         this.gradientBackground.setEndColor(endColor).generate();
         return this;
     }
+
+    public GradientTableLayout setRadiusCornerTopLeft(final float radius) {
+        this.gradientBackground.setRadiusCornerTopLeft(radius);
+        return this;
+    }
+
+    /**
+     * <p>Configure the top right corner radius</p>
+     * @param radius The radius to set
+     */
+    public GradientTableLayout setRadiusCornerTopRight(final float radius) {
+        this.gradientBackground.setRadiusCornerTopRight(radius);
+        return this;
+    }
+
+    /**
+     * <p>Configure the top left corner radius</p>
+     * @param radius The radius to set
+     */
+    public GradientTableLayout setRadiusCornerBottomRight(final float radius) {
+        this.gradientBackground.setRadiusCornerBottomRight(radius);
+        return this;
+    }
+
+    /**
+     * <p>Configure the top left corner radius</p>
+     * @param radius The radius to set
+     */
+    public GradientTableLayout setRadiusCornerBottomLeft(final float radius) {
+        this.gradientBackground.setRadiusCornerBottomLeft(radius);
+        return this;
+    }
+
 
     /**
      * <p>Configure the orientation for the gradient background for this layout.</p>
