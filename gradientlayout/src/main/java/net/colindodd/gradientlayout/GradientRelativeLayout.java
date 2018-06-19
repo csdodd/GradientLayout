@@ -13,23 +13,23 @@ public class GradientRelativeLayout extends RelativeLayout {
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public GradientRelativeLayout( final Context context,
-                                 final AttributeSet attrs,
-                                 final int defStyleAttr,
-                                 final int defStyleRes) {
+                                   final AttributeSet attrs,
+                                   final int defStyleAttr,
+                                   final int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         this.gradientBackground = new GradientBackground(context, attrs);
     }
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public GradientRelativeLayout( final Context context,
-                                 final AttributeSet attrs,
-                                 final int defStyleAttr) {
+                                   final AttributeSet attrs,
+                                   final int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.gradientBackground = new GradientBackground(context, attrs);
     }
 
     public GradientRelativeLayout(final Context context,
-                                final AttributeSet attrs) {
+                                  final AttributeSet attrs) {
         super(context, attrs);
         this.gradientBackground = new GradientBackground(context, attrs);
     }
@@ -63,6 +63,42 @@ public class GradientRelativeLayout extends RelativeLayout {
      */
     public GradientRelativeLayout setEndColor(final int endColor) {
         this.gradientBackground.setEndColor(endColor).generate();
+        return this;
+    }
+
+    /**
+     * <p>Configure the top left corner radius</p>
+     * @param radius The radius to set
+     */
+    public GradientRelativeLayout setRadiusCornerTopLeft(final float radius) {
+        this.gradientBackground.setRadiusCornerTopLeft(radius);
+        return this;
+    }
+
+    /**
+     * <p>Configure the top right corner radius</p>
+     * @param radius The radius to set
+     */
+    public GradientRelativeLayout setRadiusCornerTopRight(final float radius) {
+        this.gradientBackground.setRadiusCornerTopRight(radius);
+        return this;
+    }
+
+    /**
+     * <p>Configure the top left corner radius</p>
+     * @param radius The radius to set
+     */
+    public GradientRelativeLayout setRadiusCornerBottomRight(final float radius) {
+        this.gradientBackground.setRadiusCornerBottomRight(radius);
+        return this;
+    }
+
+    /**
+     * <p>Configure the top left corner radius</p>
+     * @param radius The radius to set
+     */
+    public GradientRelativeLayout setRadiusCornerBottomLeft(final float radius) {
+        this.gradientBackground.setRadiusCornerBottomLeft(radius);
         return this;
     }
 

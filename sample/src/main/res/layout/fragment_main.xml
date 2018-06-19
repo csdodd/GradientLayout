@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     gl:start_color="@color/purple"
     gl:end_color="@color/blue"
+    gl:radius_corner_top_left="100"
+    gl:radius_corner_top_right="100"
+    gl:radius_corner_bottom_right="100"
+    gl:radius_corner_bottom_left="100"
     gl:orientation="TOP_BOTTOM">
 
 </net.colindodd.gradientlayout.GradientRelativeLayout>
